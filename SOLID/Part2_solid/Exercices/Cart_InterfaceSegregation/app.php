@@ -5,7 +5,7 @@ require_once __DIR__ .'/vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-use Cart\{Book, Music, Bike, Cart, StorageArray};
+use Cart\{Book, Music, Bike, Cart, StorageArray, StorageFile};
 
 $products = [
     new Book(name : 'Moby Dick', price : 30),
@@ -14,6 +14,13 @@ $products = [
 ];
 
 $cart = new Cart(storage: new StorageArray(), tva : $_ENV['TVA']);
+
+foreach($products as $product)
+    $cart->buy($product, 5);
+
+echo  $cart->total()  . "\n";
+
+$cart = new Cart(storage: new StorageFile(__DIR__ . '/' . $_ENV['FILE_DATA']), tva : $_ENV['TVA']);
 
 foreach($products as $product)
     $cart->buy($product, 5);
