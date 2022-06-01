@@ -1,0 +1,15 @@
+{
+    "name": "antoine/shipping",
+    "autoload": {
+        "psr-4": {
+            "Shipping\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antoine07",
+            "email": "antoine.lucsko@gmail.com"
+        }
+    ],
+    "require": {}
+}
