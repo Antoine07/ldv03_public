@@ -1,0 +1,17 @@
+{
+    "name": "antoine/cart_interface-segregation",
+    "autoload": {
+        "psr-4": {
+            "Cart\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antoine07",
+            "email": "antoine.lucsko@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
