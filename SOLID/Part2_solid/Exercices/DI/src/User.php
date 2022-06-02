@@ -34,9 +34,7 @@ class User{
 
     public function __toString():string{
         foreach($this->storage as $storage) {
-            // $this->strInterestsName .= "Interest :{$this->storage->getName()}" . PHP_EOL;
-
-            var_dump($this->storage);
+            $this->strInterestsName .= "Interest :{$storage->getName()}" . PHP_EOL;
         }
 
         return $this->strInterestsName;
