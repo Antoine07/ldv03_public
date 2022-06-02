@@ -1,0 +1,15 @@
+{
+    "name": "antoine/di",
+    "autoload": {
+        "psr-4": {
+            "Di\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antoine07",
+            "email": "antoine.lucsko@gmail.com"
+        }
+    ],
+    "require": {}
+}
